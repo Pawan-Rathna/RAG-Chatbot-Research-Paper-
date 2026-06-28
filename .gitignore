@@ -1,0 +1,21 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Vector store (regenerate via ingest.py, don't commit large binary DB)
+chroma_db/
+
+# Data (PDFs can be large / copyrighted — don't commit by default)
+data/papers/*
+!data/papers/.gitkeep
+
+# Evaluation outputs
+evaluation_results.csv
+
+# OS
+.DS_Store
